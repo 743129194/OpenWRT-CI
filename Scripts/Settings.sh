@@ -26,6 +26,9 @@ echo "CONFIG_PACKAGE_kmod-usb-dwc3=n" >> ./.config
 echo "CONFIG_PACKAGE_kmod-usb-dwc3-qcom=n" >> ./.config
 echo "CONFIG_PACKAGE_kmod-usb-xhci-hcd=n" >> ./.config
 echo "CONFIG_PACKAGE_kmod-usb3=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-zram=y" >> .config
+echo "CONFIG_PACKAGE_zram-swap=y" >> .config
+echo "CONFIG_ZRAM_DEF_COMP_LZORLE=y" >> .config
 
 #手动调整的插件
 if [ -n "$WRT_PACKAGE" ]; then
