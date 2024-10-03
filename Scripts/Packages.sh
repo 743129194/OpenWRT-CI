@@ -20,13 +20,6 @@ UPDATE_PACKAGE() {
 	fi
 }
 
-#UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
-
-
-
-if [[ $WRT_REPO == *"openwrt-6.x"* ]]; then
-	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
-fi
 
 #更新软件包版本
 UPDATE_VERSION() {
